@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: gainsboro;
+    font-family: cursive;
+}
+
+.bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.err-bg {
+    position: fixed;
+    top: 8rem;
+    width: 30rem;
+    z-index: -1;
+}
+
+.err-message {
+    position: fixed;
+    top: 25rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    max-width: 50rem;
+    font-size: calc(1rem + 0.5vw);
+    letter-spacing: 0.1rem;
+    color: rgb(211, 211, 211);
+    border-right: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    box-shadow: rgb(208, 7, 77) 0px 3px 10px;
+}
+
+.list-container {
+    margin-bottom: 5rem;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    border-top: 1px solid rgb(208, 7, 77);
+    border-radius: 12px;
+    box-shadow: rgb(39, 39, 39) 0px 0px 15px;
+}
+
+.movie-title {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 15rem;
+}
+
+@media screen and (min-width: 768px) {
+    .err-bg {
+        width: 40rem;
+    }
+
+    .err-message {
+        top: 30rem;
+    }
+
+    .list-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .container {
+        display: flex;
+        width: 20rem;
+        height: 36rem;
+        box-shadow: rgb(208, 7, 77) 0px 2px 10px;
+    }
+
+    .movie-title {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}

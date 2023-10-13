@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Movies</title>
+</head>
+<body>
+    <h1 class="title">Movies</h1>
+    <div class="list-container">
+        <div class="container">
+            <h2 class="movie-title"><%= movie.title %></h2>
+            <p class="release-year">Release Year: <%= movie.releaseYear %></p>
+            <p class="director">Director: <%= movie.director %></p>
+            <img class="movie-img" src="<%= movie.src %>" alt="<%= movie.title %>">
+        </div>
+    </div>
+</body>
+</html>
